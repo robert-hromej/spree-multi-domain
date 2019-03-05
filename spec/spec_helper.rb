@@ -14,6 +14,7 @@ Dir[File.join(File.dirname(__FILE__), "support/**/*.rb")].each {|f| require f }
 require 'spree/testing_support/factories'
 require 'spree/testing_support/controller_requests'
 require 'spree/testing_support/authorization_helpers'
+require 'spree_analytics_trackers/factories'
 
 RSpec.configure do |config|
   # == Mock Framework

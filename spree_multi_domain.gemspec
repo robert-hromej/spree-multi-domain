@@ -23,12 +23,13 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_frontend', version
   s.add_dependency 'spree_api', version
   s.add_dependency 'spree_extension'
+  s.add_dependency 'spree_analytics_trackers'
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'coffee-rails'
-  s.add_development_dependency 'factory_bot'
+  s.add_development_dependency 'factory_bot', '~> 4.7'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'mysql2'
+  s.add_development_dependency 'mysql2', '~> 0.5.1'
   s.add_development_dependency 'pg', '~> 0.18'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'sass-rails'

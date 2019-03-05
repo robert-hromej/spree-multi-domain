@@ -52,7 +52,7 @@
 
     <div data-hook="admin_store_form_fields_right" class="col-md-6">
       <div data-hook="logo">
-        <%= image_tag @store.logo %>
+        <%= image_tag @store.logo.url %>
         <%= f.field_container :logo, class: ['form-group'] do %>
           <%= f.label :logo, Spree.t(:logo) %><br />
           <%= f.file_field :logo %>
