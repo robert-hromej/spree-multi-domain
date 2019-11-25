@@ -20,7 +20,7 @@ module Spree
     #   convert_options: { all: '-strip -auto-orient' }
     #
     # validates_attachment_file_name :logo, matches: [/png\Z/i, /jpe?g\Z/i], if: -> { logo.present? }
-    validate :check_attachment_presence
+    # validate :check_attachment_presence
     validate :check_attachment_content_type
 
     has_one_attached :logo
